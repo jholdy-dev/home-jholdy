@@ -1,0 +1,17 @@
+---
+// Click button, get confetti!
+// Styled by Tailwind :)
+import "@jholdy/ui/style.css";
+import { Button } from "@jholdy/ui";
+---
+
+<Button>Hello word!</Button>
+
+<script>
+	import confetti from 'canvas-confetti';
+	const button = document.body.querySelector('button');
+
+	if (button) {
+		button.addEventListener('click', () => confetti());
+	}
+</script>

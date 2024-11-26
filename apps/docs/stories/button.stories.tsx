@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "@jholdy/ui/button";
+import { Button } from "@jholdy/ui";
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -20,11 +20,5 @@ export const Primary: Story = {
   args: {
     children: "Hello",
     type: "button",
-    style: {
-      color: "blue",
-      border: "1px solid gray",
-      padding: 10,
-      borderRadius: 10,
-    },
   },
 };

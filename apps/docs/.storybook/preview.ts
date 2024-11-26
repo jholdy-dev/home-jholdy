@@ -1,3 +1,5 @@
+import "@jholdy/ui/style.css";
+
 import { Preview } from "@storybook/react";
 import { themes } from "@storybook/theming";
 

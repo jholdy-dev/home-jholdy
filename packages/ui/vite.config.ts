@@ -6,9 +6,14 @@ import tailwindcss from "tailwindcss";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, "./src"),
+    },
+  },
   build: {
     lib: {
-      entry: resolve(__dirname, "./lib/main.ts"),
+      entry: resolve(__dirname, "./src/main.ts"),
       name: "@jholdy/ui",
       fileName: (format) => `index.${format}.js`,
     },

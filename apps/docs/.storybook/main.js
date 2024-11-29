@@ -18,7 +18,6 @@ const config = {
   core: {},
 
   async viteFinal(config, { configType }) {
-    // customize the Vite config here
     return {
       ...config,
       define: { "process.env": {} },
